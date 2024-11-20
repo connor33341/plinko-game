@@ -14,7 +14,7 @@ export const LOCAL_STORAGE_KEY = {
 /**
  * Range of row counts the game supports.
  */
-export const rowCountOptions = [8, 9, 10, 11, 12, 13, 14, 15, 16] as const;
+export const rowCountOptions = [8, 9, 10, 11, 12, 13, 14, 15, 16, 18] as const;
 
 /**
  * Number of rows of pins the game supports.
@@ -95,7 +95,7 @@ export const binPayouts: Record<RowCount, Record<RiskLevel, number[]>> = {
   16: {
     [RiskLevel.LOW]: [16, 9, 2, 1.4, 1.4, 1.2, 1.1, 1, 0.5, 1, 1.1, 1.2, 1.4, 1.4, 2, 9, 16],
     [RiskLevel.MEDIUM]: [110, 41, 10, 5, 3, 1.5, 1, 0.5, 0.3, 0.5, 1, 1.5, 3, 5, 10, 41, 110],
-    [RiskLevel.HIGH]: [1000, 130, 26, 9, 4, 2, 0.2, 0.2, 0.2, 0.2, 0.2, 2, 4, 9, 26, 130, 1000],
+    [RiskLevel.HIGH]: [10000, 1300, 260, 90, 40, 20, 4, 2, 2, 2, 4, 20, 40, 90, 260, 1300, 10000],
   },
 };
 
