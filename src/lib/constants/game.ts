@@ -2,7 +2,7 @@ import { RiskLevel } from '$lib/types';
 import { getBinColors } from '$lib/utils/colors';
 import { computeBinProbabilities } from '$lib/utils/numbers';
 
-export const DEFAULT_BALANCE = 200;
+export const DEFAULT_BALANCE = 2000;
 
 export const LOCAL_STORAGE_KEY = {
   BALANCE: 'plinko_balance',
@@ -24,7 +24,7 @@ export type RowCount = (typeof rowCountOptions)[number];
 /**
  * Interval (in milliseconds) for placing auto bets.
  */
-export const autoBetIntervalMs = 250;
+export const autoBetIntervalMs = 50;
 
 /**
  * For each row count, the background and shadow colors of each bin.
